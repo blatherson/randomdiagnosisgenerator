@@ -1,4 +1,4 @@
-console.log('This is to be a random message in time'); // test running from terminal
+// console.log('This is to be a random message in time'); // test running from terminal
 
 // Below are the three lists of random psychoanalytic words
 const personalityTypes = [
@@ -117,6 +117,7 @@ const psychoanalyticWords = [
 // And let's not forget mama or papa
 const mamaOrPapa = ["mother", "father"];
 
+// Function to generate random diagnosis and print message containing it
 const randomDiagnosisGenerator = () => {
     let randomPersonalityType = Math.floor(Math.random()*personalityTypes.length);
     let randomLocus = Math.floor(Math.random()*locusOfObject.length);
@@ -125,3 +126,5 @@ const randomDiagnosisGenerator = () => {
     console.log(`After a thorough analysis, I have determined your diagnosis. You seem to suffer from ${personalityTypes[randomPersonalityType]} ${locusOfObject[randomLocus]} ${psychoanalyticWords[randomProblem]}. 
         It all seems to stem from your ${mamaOrPapa[randomParent]}.`);
 }
+
+randomDiagnosisGenerator();
