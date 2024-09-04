@@ -121,7 +121,7 @@ const mamaOrPapa = ["mother", "father"];
 const randomDiagnosisGenerator = () => {
     let randomPersonalityType = Math.floor(Math.random()*personalityTypes.length);
     let randomLocus = Math.floor(Math.random()*locusOfObject.length);
-    let randomProblem = Math.floor(Math.random()*psychoanalyticWords.lenght);
+    let randomProblem = Math.floor(Math.random()*psychoanalyticWords.length);
     let randomParent = Math.floor(Math.random()*2);
     console.log(`After a thorough analysis, I have determined your diagnosis. You seem to suffer from ${personalityTypes[randomPersonalityType]} ${locusOfObject[randomLocus]} ${psychoanalyticWords[randomProblem]}. 
         It all seems to stem from your ${mamaOrPapa[randomParent]}.`);
